@@ -125,23 +125,73 @@ const carnivoresOnly = function(dinos) {
 
 
 }
-
+const isHerbivores = function(dinosaur) {
+  return dinosaur.species === 'Herrerasaurus';
+}
 
 
 
 const herbivoresOnly = function(dinos) {
+  const newArr = [];
+  dinos.forEach(function(dinos){
+    if (isHerbivores(dinos) === true){
+    newArr.push((dinos))
+    }
+
+    })
+    
+    return newArr;
+
 }
 
 const extinctOnly = function(dinos) {
+  const newArr = [];
+  dinos.forEach(function(dinos){
+    if (isExtinct(dinos) === true){
+    newArr.push((dinos))
+    }
+
+    })
+    
+    return newArr;
+
 }
 
 const notExtinct = function(dinos) {
+  const newArr = [];
+  dinos.forEach(function(dinos){
+    if (isExtinct(dinos) === false){
+    newArr.push((dinos))
+    }
+
+    })
+    
+    return newArr;
+
 }
 
 const triassicOnly = function(dinos) {
+  const newArr = [];
+  dinos.forEach(function(dinos){
+    if (isTriassic(dinos) === true){
+    newArr.push((dinos))
+    }
+
+    })
+    
+    return newArr;
 }
 
 const notTriassic = function(dinos) {
+  const newArr = [];
+  dinos.forEach(function(dinos){
+    if (isTriassic(dinos) === false){
+    newArr.push((dinos))
+    }
+
+    })
+    
+    return newArr;
 }
 
 
