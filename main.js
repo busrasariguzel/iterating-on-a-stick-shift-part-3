@@ -129,9 +129,9 @@ const carnivoresOnly = function(dinos) {
 //   return dinosaur.species === 'Herrerasaurus';
 // }
 
-const isNotCretaceous = function(dinosaur) {
-  return dinosaur.period !== 'Cretaceous';
-}
+// const isNotCretaceous = function(dinosaur) {
+//   return dinosaur.period !== 'Cretaceous';
+// }
 
 const herbivoresOnly = function(dinos) {
   const newArr = [];
