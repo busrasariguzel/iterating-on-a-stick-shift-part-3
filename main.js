@@ -125,16 +125,18 @@ const carnivoresOnly = function(dinos) {
 
 
 }
-const isHerbivores = function(dinosaur) {
-  return dinosaur.species === 'Herrerasaurus';
+// const isHerbivores = function(dinosaur) {
+//   return dinosaur.species === 'Herrerasaurus';
+// }
+
+const isNotCretaceous = function(dinosaur) {
+  return dinosaur.period !== 'Cretaceous';
 }
-
-
 
 const herbivoresOnly = function(dinos) {
   const newArr = [];
   dinos.forEach(function(dinos){
-    if (isHerbivores(dinos) === true){
+    if (isCarnivore(dinos) === false){
     newArr.push((dinos))
     }
 
